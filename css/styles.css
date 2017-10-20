@@ -1,0 +1,32 @@
+body {
+    padding-top: 54px;
+}
+h1{
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+h2{
+  margin-top:19px;
+  margin-bottom: 19px;
+}
+
+label{
+  display: block;
+
+}
+input{
+  display: inline;
+  margin-bottom:8px;
+}
+.orderForm{
+background-color: lightGrey;
+}
+
+h3{
+  margin-top: 12px;
+}
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
