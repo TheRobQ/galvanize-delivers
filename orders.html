@@ -39,16 +39,17 @@
 
   <!-- Portfolio Section -->
   <div class="container">
-    <h2 class="menu">Our Menu</h2>
+
     <div class="row">
-      <div class="col-lg-9">
+      <div class="col-lg-8">
+            <h2 class="menu">Our Menu</h2>
         <div class="row">
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
               <a href="img/ice_cream.jpg"><img class="card-img-top" src="img/ice_cream.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">Project One</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+                <h4 class="card-title">Ice Cream Thing</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit!</p>
                 <p class="card-text price">$12.95</p>
               </div>
               <div class="card-footer">
@@ -60,7 +61,7 @@
             <div class="card h-100">
               <a href="img/burger.jpg"><img class="card-img-top" src="img/burger.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">Project Two</h4>
+                <h4 class="card-title">Yard Meats</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                 <p class="card-text price">$11.25</p>
               </div>
@@ -73,8 +74,8 @@
             <div class="card h-100">
               <a href="img/pizza.jpg"><img class="card-img-top" src="img/pizza.jpg" alt=""></a>
               <div class="card-body">
-                <h4 class="card-title">Project Three</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+                <h4 class="card-title">Sad Leaf Pizza</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus.</p>
                 <p class="card-text price">$8.95</p>
               </div>
               <div class="card-footer">
@@ -84,10 +85,10 @@
           </div>
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="#"><img class="card-img-top" src="img/ribs.jpg" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                <a href="#">Project Four</a>
+                 Brown Food Mess
               </h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                 <p class="card-text price">$3.55</p>
@@ -128,26 +129,36 @@
         </div>
       </div>
 
-      <div class="col-lg-3" style="background-color: beige; padding-left:   5px;padding-top:24px">
+      <div class="col-lg-4">
+          <h2>Your order</h4>
+            <div class="row" id="yourOrder">
+              <div class="col-lg-3"  style="background-color: blue; margin-right:24px;">
+                <h5 id="item">Item</h5>
+              </div>
+              <div class="col-lg-1 right" style="background-color: red;">
+                <h5 id="price" >Price</h5>
+              </div>
+            </div>
+
         <div class="yourFood">
-          <h4 id="yourOrder">Your order</h4>
+
           <h5 id="yourSubTotal">Subtotal</h5>
           <h5 id="yourTax">Tax</h5>
-          <h3 id ="yourTotal">Total</h3>
-        </div>
+          <h4 id ="yourTotal">Total</h3>
+
         <form>
           <label for="first">First Name</label>
-          <input type="text" name="first" id="first" value="" placeholder="First name">
+          <input type="text" name="first" id="first" value="" placeholder="First name" reqiured>
           <label for="last">Last Name</label>
-          <input type="text" name="last" id="last" value="" placeholder="Last name">
+          <input type="text" name="last" id="last" value="" placeholder="Last name" reqiured>
           <h3>Address</h3>
           <label for="firstLine">First Line</label>
-          <input type="text" name="firstLine" id="firstLine" value="" placeholder="Address">
+          <input type="text" name="firstLine" id="firstLine" value="" placeholder="Address" reqiured>
           <label for="scndLine">Apartment or suite</label>
           <input type="text" name="scndLine" id="scndLine" value="" placeholder="Address">
           <p class="btn btn-primary" id="total" type="submit">Submit</p>
         </form>
-
+  </div>
       </div>
     </div>
   </div>

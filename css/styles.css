@@ -14,16 +14,28 @@ label{
   display: block;
 
 }
+form{
+  margin-top: 25px;
+}
 input{
   display: inline;
   margin-bottom:8px;
 }
+
 .orderForm{
 background-color: lightGrey;
 }
 
 h3{
   margin-top: 12px;
+}
+
+.frontIcon{
+  max-width:auto;
+  margin: auto;
+}
+.right{
+  text-align: right;
 }
 @media (min-width: 992px) {
     body {

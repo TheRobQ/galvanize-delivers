@@ -13,7 +13,13 @@ $(document).ready(function() {
     //console.log(order);
     //console.log(total);
 
-    $('#yourOrder').after('<p class="orderItem">' + addItem + ': $' + price + '</p>');
+    $('#item').after('<p class="orderItem">' + addItem + '</p>');
+    $('#price').after('<p class="orderItem">' + '$' + price + '</p>');
+
+
+
+
+
 
     total.forEach(function(price) {
       accumulator += price
