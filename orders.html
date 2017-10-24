@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Order now</a>
+            <a class="nav-link active" href="orders.html">Order now</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -42,7 +42,7 @@
 
     <div class="row">
       <div class="col-lg-8">
-            <h2 class="menu">Our Menu</h2>
+        <h2 class="menu">Our Menu</h2>
         <div class="row">
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
@@ -130,16 +130,15 @@
       </div>
 
       <div class="col-lg-4">
-          <h2>Your order</h4>
-            <div class="row" id="yourOrder">
-              <div class="col-lg-3"  style="background-color: blue; margin-right:24px;">
-                <h5 id="item">Item</h5>
-              </div>
-              <div class="col-lg-1 right" style="background-color: red;">
-                <h5 id="price" >Price</h5>
-              </div>
-            </div>
-
+        <h2>Your order</h4>
+            <table class="table table-striped">
+              <thead id="foodOrder">
+              <tr>
+                <th id="item">Item</th>
+                <th id="price" >Price</th>
+              </tr>
+            </thead>
+              </table>
         <div class="yourFood">
 
           <h5 id="yourSubTotal">Subtotal</h5>
@@ -147,16 +146,12 @@
           <h4 id ="yourTotal">Total</h3>
 
         <form>
-          <label for="first">First Name</label>
-          <input type="text" name="first" id="first" value="" placeholder="First name" reqiured>
-          <label for="last">Last Name</label>
-          <input type="text" name="last" id="last" value="" placeholder="Last name" reqiured>
-          <h3>Address</h3>
-          <label for="firstLine">First Line</label>
-          <input type="text" name="firstLine" id="firstLine" value="" placeholder="Address" reqiured>
-          <label for="scndLine">Apartment or suite</label>
-          <input type="text" name="scndLine" id="scndLine" value="" placeholder="Address">
-          <p class="btn btn-primary" id="total" type="submit">Submit</p>
+          <label for="name"> Name</label><br>
+          <input type="text" name="first" id="firstName" value="" placeholder="First and last name" required><br>
+
+          <label for="firstLine">Address</label><br>
+          <input type="text" name="firstLine" id="firstLine" value="" placeholder="Address" required><br>
+          <p class="btn btn-primary" id="submit" type="submit">Submit</p>
         </form>
   </div>
       </div>

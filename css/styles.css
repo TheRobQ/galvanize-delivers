@@ -1,44 +1,87 @@
 body {
-    padding-top: 54px;
+  padding-top: 54px;
 }
-h1{
+
+h1 {
   color: white;
   font-family: 'Lobster', cursive;
 }
-h2{
-  margin-top:19px;
+
+h2 {
+  margin-top: 19px;
   margin-bottom: 19px;
 }
 
-label{
-  display: block;
-
-}
-form{
-  margin-top: 25px;
-}
-input{
-  display: inline;
-  margin-bottom:8px;
-}
-
-.orderForm{
-background-color: lightGrey;
-}
-
-h3{
+h3 {
   margin-top: 12px;
 }
 
-.frontIcon{
-  max-width:auto;
+label {
+  display: inline;
+}
+
+form {
+  margin-top: 25px;
+}
+
+input {
+  display: inline;
+  margin-bottom: 8px;
+}
+
+table {
+  margin-bottom: 25px;
+  border-spacing: 12px;
+  border-bottom: solid;
+  border-color: lightgray;
+  border-bottom-width: .5px;
+}
+
+th, td {
+  text-align: left;
+  margin-right: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.orderForm {
+  background-color: lightGrey;
+}
+
+.frontIcon {
+  max-width: auto;
   margin: auto;
 }
-.right{
+
+.right {
   text-align: right;
 }
+
+#yourSubTotal {
+  text-align: right;
+  font-size: 14px;
+}
+
+#yourTotal {
+  text-align: right;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid;
+  border-color: lightgray;
+  border-bottom-width: .5px;
+  margin-bottom: 4px;
+}
+
+#yourTax {
+  text-align: right;
+  font-size: 14px;
+  color: darkgray;
+}
+
 @media (min-width: 992px) {
-    body {
-        padding-top: 56px;
-    }
+  body {
+    padding-top: 56px;
+  }
 }
