@@ -42,6 +42,10 @@ th, td {
   margin-right: 15px;
 }
 
+p{
+  font-family: 'Lora', serif;
+}
+
 tr:nth-child(even) {
   background-color: #f2f2f2
 }
@@ -64,6 +68,10 @@ tr:nth-child(even) {
   background-color: lightslategray;
 }
 
+.price{
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+}
 .navbar{
   background-color: lightslategray;
 }
@@ -71,6 +79,15 @@ tr:nth-child(even) {
   text-align: right;
 }
 
+.orderForm{
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+hr{
+  margin-top: -6px;
+}
 #yourSubTotal {
   text-align: right;
   font-size: 14px;
