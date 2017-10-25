@@ -55,6 +55,18 @@ tr:nth-child(even) {
   margin: auto;
 }
 
+.portfolio-item
+{
+  margin-bottom:12px;
+}
+
+.card-footer{
+  background-color: lightslategray;
+}
+
+.navbar{
+  background-color: lightslategray;
+}
 .right {
   text-align: right;
 }
@@ -78,6 +90,55 @@ tr:nth-child(even) {
   text-align: right;
   font-size: 14px;
   color: darkgray;
+}
+
+.snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 275px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 40px;
+}
+
+#snackbar1{
+  background-color: darkred;
+}
+#snackbar4{
+  background-color: darkgreen;
+  color:white;
+}
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    animation: fadein 0.5s, fadeout 1.5s 3.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+/*@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}*/
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 40px; opacity: 1;}
+}
+
+/*@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}*/
+
+@keyframes fadeout {
+    from {bottom: 40px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
 
 @media (min-width: 992px) {

@@ -7,8 +7,6 @@ $(document).ready(function() {
     var myTotal = 0;
     var price = $(this).closest('.portfolio-item').find('.price').text().slice(1);
     //price = (price.replace(/\$/g, ''));
-    //OR JUST USE SLICE HERE.
-    //REFACTOR THIS OFR 1
     total.push(parseFloat(price))
     var addItem = $(this).closest('.portfolio-item').find('.card-title').text();
     order.push(addItem);
@@ -32,21 +30,20 @@ $(document).ready(function() {
   })
 
   $('#submit').click(function(event){
+    event.preventDefault()
     if(order.length < 1){
-      alert("I have a bad feeling about this. You should check your order")
-    }else if($('#firstName')[0].value.length == 0){
-alert("We\'ll need to see some ID")
-    }else if($('#firstLine')[0].value.length == 0){
-alert("We need your hyperspace coordinates")
-    }
-    else {
-    alert("Success, your order is on it's way")}
+      $('#snackbar1').addClass('show')  
+      setTimeout(function(){$('#snackbar1').removeClass('show'); }, 3500);
+    } else if($('#firstName')[0].value.length == 0){
+    $('#snackbar2').addClass('show')
+    setTimeout(function(){$('#snackbar2').removeClass('show'); }, 3500);
+    } else if($('#firstLine')[0].value.length == 0){
+$('#snackbar3').addClass('show')
+setTimeout(function(){$('#snackbar3').removeClass('show'); }, 3500);
+    } else {
+    $('#snackbar4').addClass('show')
+  setTimeout(function(){$('#snackbar4').removeClass('show'); }, 3500);}
+
   })
 
 })
-// <div class="alert alert-success alert-dismissible fade show" role="alert">
-// <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-//   <span aria-hidden="true">&times;</span>
-// </button>
-// <strong>In under 12 parsecs!!</strong> Your food is on its way at the speed of light.
-// </div>
